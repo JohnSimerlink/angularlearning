@@ -1,0 +1,65 @@
+'use strict';
+
+// Modules
+var webpack = require('webpack');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
+
+module.exports = function makeWebpackConfig() {
+  /**
+   * Config
+   * Reference: http://webpack.github.io/docs/configuration.html
+   * This is the object where all configuration gets set
+   */
+  var config = {
+    entry: {
+      app: './src/app/app.js'
+    },
+    output: {
+      publicPath: 'http://simer.link:8080/'
+    },
+    module: {
+      rules: [{
+        // JS LOADER
+        // Reference: https://github.com/babel/babel-loader
+        // Transpile .js files using babel-loader
+        // Compiles ES6 and ES7 into ES5 code
+        test: /\.js$/,
+        loader: 'babel-loader',
+        exclude: /node_modules/
+      }, {
+        // CSS LOADER
+        // Reference: https://github.com/webpack/css-loader
+        // Allow loading css through js
+        //
+        // Reference: https://github.com/postcss/postcss-loader
+        // Postprocess your css with PostCSS plugins
+        test: /\.css$/,
+        // Reference: https://github.com/webpack/extract-text-webpack-plugin
+        // Extract css files in production builds
+        //
+        // Reference: https://github.com/webpack/style-loader
+        // Use style-loader in development.
+
+        use:[ 'style-loader', 'css-loader']
+      }, 
+      {
+        // HTML LOADER
+        // Reference: https://github.com/webpack/raw-loader
+        // Allow loading html through js
+        test: /\.html$/,
+        loader: 'raw-loader'
+      }]
+    },
+    plugins: [
+      new HtmlWebpackPlugin({
+        template: './src/public/index.html',
+        inject: 'body'
+      })
+    ],
+    devServer: {
+      contentBase: './src/public',
+    } 
+  }
+
+  return config;
+}();

@@ -1,0 +1,25 @@
+{
+  "name": "webpack2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "build": "webpack --config webpack.build.js -bail -p",
+    "start": "webpack-dev-server --hot --host 0.0.0.0",
+    "dev": "webpack-dev-server --history-api-fallback --hot --inline --progress",
+    "test": "karma start",
+    "test:live": "karma start --auto-watch -no-single-run"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.3",
+    "angular-ui-router": "^0.4.2",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1",
+    "karma": "^1.5.0"
+  },
+  "devDependencies": {
+    "css-loader": "^0.27.3"
+  }
+}

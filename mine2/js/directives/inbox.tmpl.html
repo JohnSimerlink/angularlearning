@@ -1,0 +1,11 @@
+<div>
+  <div class='inbox'>
+    <div class='inbox__count'>
+      You have {{ inbox.messages.length && inbox.messages.length || 'no' }} messages
+    </div>
+  </div>
+  <div ng-hide="!inbox.messages.length">
+    <input type='text' class='inbox__search' ng-model='inbox.search' placeholder="search by from. e.g. TicketMaster">
+  </div>
+  <div> this <span ng-hide='true'> span</span> is an input. length is {{inbox.messages.length}}</div>
+</div>

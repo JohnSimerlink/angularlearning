@@ -1,0 +1,8 @@
+06 first directive vs mine
+	06 loads fine. search works
+	[x] controllers/inbox.js - 
+	[x] directives/inbox.js
+	[x] inbox.tmpl.html
+	[x] factories/inboxFactory.js
+	[x] app.js
+	

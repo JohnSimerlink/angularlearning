@@ -1,0 +1,100 @@
+
+> webpack2@1.0.0 start /home/ec2-user/Dev/Learn1ThingADay/36-AngularJS/webpack2
+> webpack-dev-server --hot --host 0.0.0.0
+
+Project is running at http://0.0.0.0:8080/
+webpack output is served from /build/
+Hash: 166e5165b11860cb4f10
+Version: webpack 2.2.1
+Time: 2432ms
+    Asset    Size  Chunks                    Chunk Names
+bundle.js  2.1 MB       0  [emitted]  [big]  app
+chunk    {0} bundle.js (app) 2.06 MB [entry] [rendered]
+   [39] ./main.js 288 bytes {0} [built]
+   [40] ./~/webpack/hot/dev-server.js 1.57 kB {0} [built]
+   [41] /home/ec2-user/n/lib/~/webpack-dev-server/client?http://0.0.0.0:8080 5.44 kB {0} [built]
+   [43] ./app.config.js 212 bytes {0} [built]
+   [46] ./src/features/home/index.js 286 bytes {0} [built]
+   [48] ./~/jquery/dist/jquery.js 268 kB {0} [built]
+   [51] ./main.css 892 bytes {0} [built]
+   [52] ./~/webpack/hot/emitter.js 77 bytes {0} [built]
+   [53] ./~/webpack/hot/log-apply-result.js 1.02 kB {0} [built]
+   [55] /home/ec2-user/n/lib/~/webpack-dev-server/client/overlay.js 3.6 kB {0} [built]
+   [56] /home/ec2-user/n/lib/~/webpack-dev-server/client/socket.js 856 bytes {0} [built]
+   [92] /home/ec2-user/n/lib/~/webpack-dev-server/~/strip-ansi/index.js 161 bytes {0} [built]
+   [95] (webpack)/hot/emitter.js 77 bytes {0} [built]
+  [104] (webpack)/~/node-libs-browser/~/url/url.js 23.3 kB {0} [built]
+  [106] multi /home/ec2-user/n/lib/~/webpack-dev-server/client?http://0.0.0.0:8080 webpack/hot/dev-server ./main.js 52 bytes {0} [built]
+     + 92 hidden modules
+
+ERROR in ./~/angular/angular.js
+Module not found: Error: Can't resolve 'window.jquery' in '/home/ec2-user/Dev/Learn1ThingADay/36-AngularJS/webpack2/node_modules/angular'
+ @ ./~/angular/angular.js 1:0-24
+ @ ./~/angular/index.js
+ @ ./main.js
+ @ multi /home/ec2-user/n/lib/~/webpack-dev-server/client?http://0.0.0.0:8080 webpack/hot/dev-server ./main.js
+
+ERROR in ./src/features/home/home.html
+Module parse failed: /home/ec2-user/Dev/Learn1ThingADay/36-AngularJS/webpack2/src/features/home/home.html Unexpected token (1:0)
+You may need an appropriate loader to handle this file type.
+| <div class='jumbotron'>
+|   <h1> Hello {{home.name}}</h1>
+| </div>
+ @ ./src/features/home/home.routes.js 6:14-36
+ @ ./src/features/home/index.js
+ @ ./main.js
+ @ multi /home/ec2-user/n/lib/~/webpack-dev-server/client?http://0.0.0.0:8080 webpack/hot/dev-server ./main.js
+webpack: Failed to compile.
+webpack: Compiling...
+Hash: 166e5165b11860cb4f10
+Version: webpack 2.2.1
+Time: 57ms
+chunk    {0} bundle.js (app) 2.06 MB [entry]
+   [39] ./main.js 288 bytes {0} [built]
+   [54] ./src/features/home/home.html 282 bytes {0} [built] [failed] [1 error]
+     + 105 hidden modules
+
+ERROR in ./src/features/home/home.html
+Module parse failed: /home/ec2-user/Dev/Learn1ThingADay/36-AngularJS/webpack2/src/features/home/home.html Unexpected token (1:0)
+You may need an appropriate loader to handle this file type.
+| <div class='jumbotron'>
+|   <h1> Hello {{home.name}}</h1>
+| </div>
+ @ ./src/features/home/home.routes.js 6:14-36
+ @ ./src/features/home/index.js
+ @ ./main.js
+ @ multi /home/ec2-user/n/lib/~/webpack-dev-server/client?http://0.0.0.0:8080 webpack/hot/dev-server ./main.js
+
+ERROR in ./~/angular/angular.js
+Module not found: Error: Can't resolve 'window.jquery' in '/home/ec2-user/Dev/Learn1ThingADay/36-AngularJS/webpack2/node_modules/angular'
+ @ ./~/angular/angular.js 1:0-24
+ @ ./~/angular/index.js
+ @ ./main.js
+ @ multi /home/ec2-user/n/lib/~/webpack-dev-server/client?http://0.0.0.0:8080 webpack/hot/dev-server ./main.js
+webpack: Failed to compile.
+webpack: Compiling...
+Hash: 166e5165b11860cb4f10
+Version: webpack 2.2.1
+Time: 27ms
+chunk    {0} bundle.js (app) 2.06 MB [entry]
+   [54] ./src/features/home/home.html 282 bytes {0} [built] [failed] [1 error]
+     + 106 hidden modules
+
+ERROR in ./src/features/home/home.html
+Module parse failed: /home/ec2-user/Dev/Learn1ThingADay/36-AngularJS/webpack2/src/features/home/home.html Unexpected token (1:0)
+You may need an appropriate loader to handle this file type.
+| <div class='jumbotron'>
+|   <h1> Hello {{home.name}}</h1>
+| </div>
+ @ ./src/features/home/home.routes.js 6:14-36
+ @ ./src/features/home/index.js
+ @ ./main.js
+ @ multi /home/ec2-user/n/lib/~/webpack-dev-server/client?http://0.0.0.0:8080 webpack/hot/dev-server ./main.js
+
+ERROR in ./~/angular/angular.js
+Module not found: Error: Can't resolve 'window.jquery' in '/home/ec2-user/Dev/Learn1ThingADay/36-AngularJS/webpack2/node_modules/angular'
+ @ ./~/angular/angular.js 1:0-24
+ @ ./~/angular/index.js
+ @ ./main.js
+ @ multi /home/ec2-user/n/lib/~/webpack-dev-server/client?http://0.0.0.0:8080 webpack/hot/dev-server ./main.js
+webpack: Failed to compile.
